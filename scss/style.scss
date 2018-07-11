@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Aller';
+    src: url('fonts/Aller_Lt.ttf');
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Aller', sans-serif;
+	margin: 0;
+	padding:0px;
+	background-color: #ebe7df;
+}
+header {
+	width: 100%;
+	height: 47px;
+	background-color: #242424;
+	/* display: inline-block; */
+}
+.logo {
+	float: left;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #57c5a0;
+	text-transform: uppercase;
+	letter-spacing: -0.65px;
+	text-decoration: none;
+}
+
+.navbar a {
+	text-transform: uppercase;
+	line-height: 15px;
+    float: right;
+    font-size: 11px;
+	color: #aaaaaa;
+	border: 1px solid #4c4c4c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	text-transform: uppercase;
+    border: 1px solid #4c4c4c;
+    outline: none;
+    color: #aaaaaa;
+    padding:  9px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #242424;
+}
+
+.dropdown-content {
+	color: #aaaaaa;
+    display: none;
+    position: absolute;
+    background-color:  #242424;
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #aaaaaa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
