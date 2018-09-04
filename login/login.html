@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        padding: 0px 10px;
+        width: 100%;
+        max-width: 360px;
+        margin: auto;
+        width: 100vw;
+        font-family: 'Aller' , sans-serif ;
+        background-color: #ebe7df;
+        color: #7e7e7e;    
+    }
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #57c5a0;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color:#57c5a0;
+    }
+
+    div {
+        margin-top: 45px;
+        border-radius: 5px;
+        background-color: #2e2e2e;
+        padding: 20px;
+    }
+    .register {
+        margin: 8px 0;
+        padding: 2px;
+        border: 1px solid  #2e2e2e;
+        font-size: 16px;
+        color: #7e7e7e;  
+       
+
+    }
+</style>
+<body>
+
+<div>
+  <form action="/action_page.php">
+    <label for="login">Login</label>
+    <input type="text" id="fname" name="login" placeholder="Your login">
+
+    <label for="passwrd">Password</label>
+    <input type="text" id="lname" name="password" placeholder="enter your password">
+    
+    <a class="register" href="#">Register</a>
+    <input href="../index.html" type="submit" value="Submit">
+    
+
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,41 +1,401 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>FooseShoes</title>
-	<link href='fonts/Aller_Lt.ttf' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+	<link rel="stylesheet" href="css/normalize.css"/>	
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
-	
-	<header><!--/.header-->   
-		<div class="navbar">
-			<h1 class="logo" href="#">FooseShoes</h1>
-			<a href="#">Login or Register</a>
-			<div class="dropdown">
-			  <button class="dropbtn">Search
-				<i class="material-icons">search</i>
-			  </button>
-			  <div class="dropdown-content">
-				<a href="#">Men Shoes</a>
-				<a href="#">Kids</a>
-			  </div>
-				<!-- <input class="search" type="text" name="searchbar" 
-						placeholder="search.."></input>   -->
-			</div> 
-		</div>
-	</header><!--/.header-->   
+    <header>
+        <div class="container">
+            <a href="index.html"><h1 class="logo" href="#">FooseShoes</h1></a>
+            <a class="loginbtn" href="login/login.html">LOGIN or REGISTER</a>
+            <a class="searchicon" href="#" onclick="searchFunction()">
+                <img src="img/search-icon.png" alt="search">
+            </a>
+            <div id="searchbar" class="searchbar" style="display:none;">
+                <input type="text" class="searchinput" placeholder="SEARCH"> 
+                <div class="dropdown-content">
+                    <a href="#">MEN SHOES</a>
+                    <a href="#">KIDS</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <nav class="clearfix">
+        <div class="container">
+      
+            <ul>
+                <li class="menu">
+                    <a id="menu" href="#"></a>
+                </li>
+                <li class="leftmenu"><a href="#">Home</a></li>
+                <li id="leftmenu" class="leftmenu"><a href="products/products.html">Products</a></li>
+                <li class="leftmenu"><a href="#">About</a></li>
+                <li class="leftmenu"><a href="#">Pages</a></li>
+                <li class="leftmenu"><a href="#">Blog</a></li>
+                <li class="lastleft leftmenu"><a href="#">Contact</a></li>
+                <li class="rightmenu">
+                    <div class="cart">
+                        <a id="clickcart" class="cartbtn" href="#">0</a>
+                    </div>
+                </li>
+                <li class="rightmenu">
+                    <div class="star">
+                        <a id="clickstar" class="starbtn" href="#">0</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="searchicon" href="#" onclick="searchFunction()">
+                            <img src="img/search-icon.png" alt="search">
+                        </a>
+                        <div id="searchbar" class="searchbar" style="display:none;">
+                            <input type="text" class="searchinput" placeholder="SEARCH"> 
+                            <div class="dropdown-content">
+                                <a href="#">MEN SHOES</a>
+                                <a href="#">KIDS</a>
+                        </div>
+                </li>
+                
+            </ul>        
+        </div>
+    </nav>
 
+    <div class="top">
+        <div class="slide1">
+            <div class="slidecontent">
+                <a>$145,99</a>
+                <h1>Pink Shoes<br/>
+                    2013 Collection
+                </h1>
+                <p>Nunc non fermentum nunc. Sed ut ante <br/>
+                    eget leo tempor consequat sit amet eu orci.<br/> 
+                    Donec dignissim dolor eget..</p>
+                <ul>
+                    <li >
+                        <a class="eyeicon"> </a>
+                    </li>
+                    <li>
+                        <a class="staricon" ></a>
+                    </li>
+                    <li>
+                        <a class="shareicon"></a>
+                    </li>
+                    <li>
+                        <a class="carticon"></a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide2">
+            <div class="slidecontent">
+                <a>$145,99</a>
+                <h1>Pink Shoes<br/>
+                    2013 Collection
+                </h1>
+                <p>Nunc non fermentum nunc. Sed ut ante <br/>
+                    eget leo tempor consequat sit amet eu orci.<br/> 
+                    Donec dignissim dolor eget..</p>
+                <ul>
+                    <li >
+                        <a class="eyeicon"> </a>
+                    </li>
+                    <li>
+                        <a class="staricon"></a>
+                    </li>
+                    <li>
+                        <a class="shareicon"></a>
+                    </li>
+                    <li>
+                        <a class="carticon"></a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="slide3">
+            <div class="slidecontent">
+                <a>$145,99</a>
+                <h1>Pink Shoes<br/>
+                    2013 Collection
+                </h1>
+                <p>Nunc non fermentum nunc. Sed ut ante <br/>
+                    eget leo tempor consequat sit amet eu orci.<br/> 
+                    Donec dignissim dolor eget..</p>
+                <ul>
+                    <li >
+                        <a class="eyeicon"> </a>
+                    </li>
+                    <li>
+                        <a class="staricon"></a>
+                    </li>
+                    <li>
+                        <a class="shareicon"></a>
+                    </li>
+                    <li>
+                        <a class="carticon"></a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contentonly">
+            <a>$145,99</a>
+            <h1>Pink Shoes<br/>
+                2013 Collection
+            </h1>
+            <p>Nunc non fermentum nunc. Sed ut ante <br/>
+                eget leo tempor consequat sit amet eu orci.<br/> 
+                Donec dignissim dolor eget..</p>
+            <ul>
+                <li >
+                    <a class="eyeicon"> </a>
+                </li>
+                <li>
+                    <a class="staricon" ></a>
+                </li>
+                <li>
+                    <a class="shareicon"></a>
+                </li>
+                <li>
+                    <a class="carticon"></a> 
+                </li>
+            </ul>
+        </div>
+   
+    <div class="slidernav">
+        <ul class="container">
+            <li class="pink">Pink Shoes<br/>
+                <p>Now af $145,99</p>
+            </li>
+            <li class="anna">Anna Field<br/>
+                <p>Limited Edition</p>
+            </li>
+            <li class="prada">Prada<br/>
+                <p>Summer is coming</p>
+            </li>
+        </ul>
+    </div>
 
-	
-	
-	<!-- <footer class="main-footer">
-		<span>&copy;Copyright © Fooseshoes 2013. 
-			Designed by EnzoLiVolti. </span>
-		<span>Home / Support / Terms and Conditions / Faqs / Contact us</span>
-	</footer> -->
-	
+    <div class="specials">
+        <div class="container flex-container">
+            <a class="onsale" href="#">
+                <div class="transbox">
+                    <h2 class="onsalebox">on sale</h2>
+                </div>
+            </a>
+            <a class="speshialoffer" href="#">
+                <div class="transbox">
+                    <h2 class="specialbox">special offers</h2>
+                </div>
+            </a>
+            <a class="musthave" href="#">
+                <div class="transbox">
+                    <h2 class="mustbox">must have</h2>
+                </div>
+            </a>
+        </div>   
+    </div>
+
+    <div class="newarrivals container">
+        <h3>New arrivals on FooseShoes</h3>
+        <button class="showall">Show All</button>
+        <div class="flex-container">
+            <div class="flex-item">
+                <a class="price">$145,99</a>
+                <p>Even&Odd</p>
+                <div class="iconmenu">
+                    <a class="eyeicon"></a>
+                    <a class="staricon"></a>
+                    <a class="shareicon"></a>
+                    <a class="carticon"></a> 
+                </div>
+            </div>
+            <div class="flex-item">
+                    <a class="price">$145,99</a>
+                    <p>Even&Odd</p>
+                    <div class="iconmenu">
+                        <a class="eyeicon"></a>
+                        <a class="staricon"></a>
+                        <a class="shareicon"></a>
+                        <a class="carticon"></a> 
+                    </div>
+            </div>
+            <div class="flex-item">
+                    <a class="price">$145,99</a>
+                    <p>Even&Odd</p>
+                    <img class="onsaleicon" src="img/onsaleicon.png" alt="onsale">
+                    <div class="iconmenu">
+                        <a class="eyeicon"></a>
+                        <a class="staricon"></a>
+                        <a class="shareicon"></a>
+                        <a class="carticon"></a> 
+                    </div>
+                    <img class="onsaleicon" src="img/onsaleicon.png" alt="onsale"> 
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="bestsellers container">
+        <h3>Best sellers of the month</h3>
+        <button class="showall">Show All</button>
+        <div class="flex-container"> 
+            <div class="flex-item">
+                <a class="price">$145,99</a>
+                <p>Even&Odd</p>
+                <div class="iconmenu">
+                    <a class="eyeicon"></a>
+                    <a class="staricon"></a>
+                    <a class="shareicon"></a>
+                    <a class="carticon"></a> 
+                </div>
+            </div>
+            <div class="flex-item">
+                <a class="price">$145,99</a>
+                <p>Even&Odd</p>
+                <div class="iconmenu">
+                    <a class="eyeicon"></a>
+                    <a class="staricon"></a>
+                    <a class="shareicon"></a>
+                    <a class="carticon"></a> 
+                </div>
+            </div>
+            <div class="flex-item">
+                <a class="price">$145,99</a>
+                <p>Even&Odd</p>
+                <div class="iconmenu">
+                    <a class="eyeicon"></a>
+                    <a class="staricon"></a>
+                    <a class="shareicon"></a>
+                    <a class="carticon"></a> 
+                </div>
+                <img class="outofstockicon" src="img/outifstockicon.png" alt="outofstock">
+            </div>
+        </div>
+    </div>
+
+    <div class="addon container">
+        <div class="flex-container">
+            <div class="col1">
+                <h4>Free Shipping</h4> 
+                <p>
+                    Vivamus metus turpis, bibendum vitae euismod vel,
+                    vulputate vel nibh. Class aptent taciti sociosqu
+                    ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Donec erat sem, 
+                </p>
+            </div>
+            <div class="col2">
+                <h4>Testimonials</h4> 
+                <p>
+                    vel, vulputate vel nibh. 
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Donec erat sem,
+                     vehicula id dictum sit [...]<br/>
+                    <i> - John Doe -</i>
+                </p>
+            </div>
+            <div class="col3">
+                <h4>Blog news</h4>
+                <img class="date1"src="img/blog1.png" alt="date">
+                <p>Nice & clean. The best for you blog! <br/>
+                        Vivamus metus turpis, bibendum vitae euismod vel,
+                        vulputate vel nibh.
+                </p>
+                <br/>
+                <img class="date2"src="img/blog1.png" alt="date">
+                <p>What an Ecomerce theme <br/>
+                    Vivamus metus turpis,
+                    bibendum vitae euismod vel, 
+                    vulputate vel nibh.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="widget">
+            <div class="container flex-container">
+               
+                <div class="wid1">
+                    <h4>TEXT WIDGET</h4> 
+                    <p>
+                        Donec sed odio dui. Nulla vitae elit libero,
+                        a pharetra augue. Nullam id dolor id nibh ulticies vehicula ut id elit.
+                        Integer posuere erat a ante venenatis dapibus posuere velit aliquet. 
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+                        eget lacinia odio sem nec elit.
+                    </p>
+
+                </div>
+                <div class="wid2">
+                    <h4>TWITTER WIDGET</h4>
+                    <p>
+                        <span>@ericafustero</span> Why thank you.
+                        Your work looks <br/>
+                        awesome by the way!
+                        <span>@treemelody</span><br/>                  
+                        19 days ago
+                    <p>
+                        <span>@ericafustero</span>Why thank you.
+                        Your work looks <br/>
+                        awesome by the way!
+                        <span>@treemelody</span><br/>                    
+                        19 days ago
+                    </p>
+                </div>
+                <div class="wid3">
+                    <h4>FLICKR WIDGET</h4>
+                    <a href="img/flikrwidjet.png"><img src="img/flikrwidjet.png" alt="image"></a>
+                </div>
+            </div>
+    </div>
+
+    <div class="prefooter clearfix">
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Enter email for newsletter" name="email">
+                <button type="submit"><i class="emailbtn">></i></button>
+            </form>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com" class="facebook"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/" class="twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.google.com" class="google"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" class="leakedin"></a>
+                </li>
+                <li>
+                    <a href="https://www.flickr.com/" class="flickr"></a>
+                </li>
+            </ul>
+        </div> 
+        </div>
+    
+
+    <footer>
+        <div class="container clearfix">
+            <span>Copyright © Fooseshoes 2013.<br/> 
+               Designed by EnzoLiVolti.
+            </span>
+            <span class="rightfooter">
+               Home / Support / Terms and Conditions / Faqs / Contact us
+            </span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="script/slider.js"></script>
 </body>
 </html>
